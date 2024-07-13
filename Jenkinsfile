@@ -7,7 +7,7 @@ pipeline {
 	   stage('Build Docker Image') { 
 			steps { 
 				 sh """
-		          docker build -t OlaUnicamp .
+		          docker build -t olaunicamp .
 		         """
             }
         }
@@ -15,7 +15,7 @@ pipeline {
            stage('Run Docker Container') {
 			steps { 
 				sh """
-		          docker run --rm OlaUnicamp
+		          docker run --rm olaunicamp
 		        """
             }
         }
